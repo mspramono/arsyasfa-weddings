@@ -1,0 +1,107 @@
+:root{
+    --pink: #f14e95;
+    --bg: #0a0a0a;
+    --shadow: 0 2px 2px rgb(0 0 0 0/0.5);
+    --biru: #64748b;
+
+
+}
+
+body{
+    font-size: 1.2rem;
+    font-family: "Work Sans", sans-serif;
+    
+    min-height: 2000px;
+
+}
+
+.hero::before{
+
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/SPW00480.jpg');
+    z-index: -1;
+    /* 1. MENCEGAH PENGULANGAN GAMBAR */
+    background-repeat: no-repeat;
+    
+    /* 2. MEMASTIKAN GAMBAR MENGISI SELURUH LAYAR */
+    /* 'cover' memastikan gambar menutupi area 100%x100% tanpa terpotong */
+    background-size: cover; 
+    
+    /* 3. MENEMPATKAN GAMBAR DI TENGAH LAYAR */
+    background-position: center;
+    
+    z-index: -1;
+}
+
+.hero h1, .hero h4, .hero p {
+    text-shadow: var(--shadow);
+}
+
+.hero{
+    position: relative;
+    min-height: 100vh;
+
+}
+
+.hero h1, .hero h4 .hero p
+
+
+
+.hero h1{
+    font-family: 'Sacramento', sans-serif; 
+    font-size: 6rem;
+
+
+}
+
+.hero h4{
+    font-size: 1.4rem;
+}
+
+
+.hero p{
+    font-size: 1.2rem;
+}
+
+.hero a{
+    margin-top:7%;
+    color: var(--biru);
+    background-color: white;
+}
+
+.hero a:hover{
+    background-color: var(--biru);
+    color: white;
+}
+
+
+
+
+
+/* INI PENGATURAN SUPAYA FIT DI SEMUA DEVICE */
+/* Media Query */
+/* laptop */
+@media (max-width: 992px) {
+    html{
+        font-size: 75%;
+    }
+}
+
+/* tablet */
+@media (max-width: 768px) {
+    html{
+        font-size: 65%;
+    }
+}
+
+/* handphone */
+@media (max-width: 576px) {
+    html{
+        font-size: 60%;
+    }
+}
